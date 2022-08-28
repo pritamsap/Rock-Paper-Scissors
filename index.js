@@ -1,5 +1,4 @@
 
-
 // randomly choose a number between 0-2 and each value is assigned
 // rock, paper or scissors
 function getComputerChoice() {
@@ -15,9 +14,12 @@ function getComputerChoice() {
     else {
         Computervalue = "scissors";
     }
+
+
     return Computervalue;
    
 }
+
 
 /*Plays a single round a Rock Paper Scissors and return a string delcaring
 why you won or lost - based on your choice of input */
