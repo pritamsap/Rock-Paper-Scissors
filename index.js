@@ -7,10 +7,8 @@ const choices = document.querySelectorAll('.rock-div, .paper-div, .scissors-div'
 const playAgainBtn = document.querySelector('.play-again');
 const headingThree = document.querySelector('.heading-three');
 const entirePage = document.querySelector('.entire-page');
-const overlayHeading = document.querySelector('.overlay-heading');
 const decisionDiv = document.querySelector('.module-extra');
 const resultTxt = document.querySelector('.decision-paragraph');
-const overlay = document.querySelector('.overlay');
 const playerCurrentScore = document.querySelector('.player-score-counter')
 const computerCurrentScore = document.querySelector('.computer-score-counter')
 
@@ -33,7 +31,7 @@ playAgainBtn.addEventListener('click', resetGame);
 
 
 
-// applies for all choices
+// applies for all choices  - three events
 choices.forEach(choice => {
     choice.addEventListener('click', roundUpdater);
     choice.addEventListener('click', resultOutput);
@@ -43,18 +41,17 @@ choices.forEach(choice => {
 
 
 
-
-
-// Display Game Over section
+// Goes to Game Over section
 function gameOver() {
     if(roundIncrementer >= 10) {
         window.location.href = "./pagetwo.html";
+        decisionDiv.removeAttribute('style');
+
     }
-    console.log(roundIncrementer);
 }
 
 
-// outputs result each round
+// outputs result decison each round
 function resultOutput() {
     decisionDiv.setAttribute('style', 'width: 320px; transform: scale(0.9);');
 }
@@ -70,21 +67,15 @@ function roundUpdater() {
 
 
 function resetGame() {
-    if(isGameOver == false) {
-        roundIncrementer = 1;
-        playerSum = 0;
-        computerSum = 0;
-
-    }
-
-    else {
-        overlay.removeAttribute('style', 'class');
-        overlay.removeChild(overlayHeading);
-    }
-
+    roundIncrementer = 1;
+    playerSum = 0;
+    computerSum = 0;
     playerCurrentScore.textContent = 0;
     computerCurrentScore.textContent = 0;
     headingThree.textContent = `Choose - [ Round ${roundIncrementer} ] - Weapon`;
+    decisionDiv.removeAttribute('style');
+    resultTxt.textContent = "Decision";
+
 
 }
 
