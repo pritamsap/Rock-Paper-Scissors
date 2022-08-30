@@ -14,6 +14,14 @@ body {
     
 }
 
+.overlay {
+    transition: 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 200%;
+}
+
 .entire-page {
     margin-top: 2.5vh;
     background-color: #FFFFff;
@@ -27,7 +35,7 @@ body {
 
 .main-heading {
     font-family: 'MemphisRiver', sans-serif;
-    font-size: 5vw;
+    font-size: 40px;
     color: #4a08ff;
     cursor: pointer;
 
@@ -88,6 +96,28 @@ body {
 }
 
 
+.module-extra {
+    margin-top: 30px;
+}
+
+.module-extra {
+    width: 200px;
+    height: 35px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #c2fbd7;    
+    transform: skewX(-15deg);
+    border-radius: 5px;
+    color: #008000;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+    transition: 1s;
+   
+}
+
+
+
 .module-four {
     background-color: #ebf1f4;
     margin: 5vh 0;
@@ -96,6 +126,7 @@ body {
     display: flex;
     gap: 40px;
     border-radius: 2em;
+    margin-top: 3vh;
     
 
 
