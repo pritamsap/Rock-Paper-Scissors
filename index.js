@@ -57,6 +57,8 @@ function gameOver() {
         roundIncrementer = 0;
         playerCurrentScore.textContent = 0;
         computerCurrentScore.textContent = 0;
+        playerSum = 0; 
+        computerSum = 0;
         headingThree.textContent = `Choose - [ Round ${roundIncrementer} ] - Weapon`;
 
     }
@@ -82,6 +84,8 @@ function roundUpdater() {
 function resetGame() {
     if(isGameOver == false) {
         roundIncrementer = 1;
+        playerSum = 0;
+        computerSum = 0;
     }
 
     else {
