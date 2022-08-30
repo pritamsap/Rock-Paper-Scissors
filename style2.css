@@ -1,0 +1,51 @@
+
+ @font-face {
+    font-family: 'MemphisRiver';
+    src: url(./fonts/Memphis\ River.otf) format('opentype');
+}
+.body {
+    padding: 0;
+    margin:  0;
+
+}
+
+
+.overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 200%;
+    width: 100vw; 
+    height: 100vh; 
+    background-color: #ffb703; 
+    position: absolute; 
+    transform: scale(0.9); 
+    border-radius: 1em;
+}
+
+h3 {
+    font-family: 'MemphisRiver', sans-serif;
+    font-size: 100px;
+    color: white;
+    cursor: pointer;
+
+}
+
+.go-back > button {
+    width: 10em;
+    height: 50px;
+    background-color: #ffa500;
+    border: 0px solid white;
+    border-radius: 5vh;
+    font-size: 20px;
+    box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+
+.go-back > button:hover {
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+    transform: scale(0.7);
+}

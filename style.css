@@ -14,13 +14,6 @@ body {
     
 }
 
-.overlay {
-    transition: 1s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 200%;
-}
 
 .entire-page {
     margin-top: 2.5vh;

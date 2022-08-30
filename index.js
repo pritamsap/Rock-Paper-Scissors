@@ -14,9 +14,6 @@ const overlay = document.querySelector('.overlay');
 const playerCurrentScore = document.querySelector('.player-score-counter')
 const computerCurrentScore = document.querySelector('.computer-score-counter')
 
-const moduleThree = document.querySelector('.module-three');
-
-
 
 
 // Global Variable
@@ -46,21 +43,12 @@ choices.forEach(choice => {
 
 
 
+
+
 // Display Game Over section
 function gameOver() {
     if(roundIncrementer >= 10) {
-        overlay.setAttribute('style', 
-        'width: 100vw; height: 100vh; position: absolute; background-color: #ffb703; position: absolute; transform: scale(0.9); border-radius: 1em;');
-        overlayHeading.textContent = 'Game Over'
-        playAgainBtn.setAttribute('style', 'position: relative;');
-        isGameOver = true;
-        roundIncrementer = 0;
-        playerCurrentScore.textContent = 0;
-        computerCurrentScore.textContent = 0;
-        playerSum = 0; 
-        computerSum = 0;
-        headingThree.textContent = `Choose - [ Round ${roundIncrementer} ] - Weapon`;
-
+        window.location.href = "./pagetwo.html";
     }
     console.log(roundIncrementer);
 }
@@ -86,6 +74,7 @@ function resetGame() {
         roundIncrementer = 1;
         playerSum = 0;
         computerSum = 0;
+
     }
 
     else {
@@ -96,6 +85,7 @@ function resetGame() {
     playerCurrentScore.textContent = 0;
     computerCurrentScore.textContent = 0;
     headingThree.textContent = `Choose - [ Round ${roundIncrementer} ] - Weapon`;
+
 }
 
 

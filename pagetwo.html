@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Over</title>
+    <link rel="stylesheet" href="./style2.css">
+
+
+</head>
+<body>
+
+    <section class="overlay">
+        <h3>Game Over</h3>
+
+        <div class="go-back">
+            <button class="play-again-two">Play Again</button>
+        </div>
+    </section>
+
+
+    <script>
+
+        const gameOverBtn = document.querySelector('.play-again-two');
+        gameOverBtn.addEventListener('click', newGame)
+
+
+        // Play game again after it's completed to round 10
+        function newGame() {
+            window.location.href = "./index.html";
+        }
+
+    </script>
+
+   
+    
+</body>
+</html>
