@@ -1,5 +1,8 @@
 # Rock-Paper-Scissors
 
+Live: https://pritamsap.github.io/Rock-Paper-Scissors/
+
+
 Rock-Paper-Scissors game is going to be built using 
 Javascript.
 
